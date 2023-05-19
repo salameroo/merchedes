@@ -1,0 +1,143 @@
+.search-form,
+.search-icon {
+    box-sizing: border-box;
+    transition: 1s
+}
+
+.clear-btn,
+.search-icon {
+    right: 0;
+    text-align: center
+}
+
+.over-menu {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%
+}
+
+.search-form {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 25px;
+    border: 4px solid #fff
+}
+
+.search-icon,
+.search-input {
+    height: 42.5px;
+    top: 0;
+    position: absolute
+}
+
+.search-input {
+    left: 0;
+    width: 100%;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px
+}
+
+.search-icon {
+    padding: 10px;
+    width: 42.5px;
+    border-radius: 50%;
+    color: var(--main-body-bg);
+    font-size: 1.2em
+}
+
+.search-form:hover,
+.search-form:valid {
+    width: 200px;
+    cursor: pointer
+}
+
+.search-form:hover .search-input,
+.search-form:valid .search-input {
+    display: block
+}
+
+.search-form:hover .search-icon,
+.search-form:valid .search-icon {
+    background: #07051a;
+    color: #fff
+}
+
+.clear-btn {
+    display: none;
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    font-size: 20px;
+    color: #fff;
+    width: 100%
+}
+
+.search-form:valid .clear-btn {
+    display: block
+}
+
+.navbar-container {
+    background-color: var(--main-navbar)
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 85vw;
+    margin: 0 auto
+}
+
+.navbar-logo {
+    width: 100%;
+    height: 15vh;
+    background-image: url(./media/rims/13.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar-links {
+    width: 73%;
+    display: flex;
+    justify-content: space-between
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2
+}
+
+@media (max-width:768px) {
+
+    .navbar,
+    .navbar-store,
+    .navbar-links {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}

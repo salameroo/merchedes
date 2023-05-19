@@ -1,0 +1,846 @@
+@font-face {
+    font-family: inter;
+    src: url(./media/fonts/inter.ttf)
+}
+
+@font-face {
+    font-family: inter-ladea;
+    src: url(./media/fonts/static/inter.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #000
+}
+
+
+
+
+
+
+
+
+#english-switch-button {
+    opacity: 0;
+}
+
+#english-switch-button:checked,
+#english-switch-button:checked~.page-transition,
+#english-switch-button:checked~.english-btn,
+.first {
+    display: none
+}
+
+.english-btn {
+    padding: 1%;
+    font-family: inter;
+    color: white;
+}
+
+.lenguage-menu {
+    width: 10%;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.page-transition {
+    animation: fadeOut 1s;
+}
+
+.page-transition-english {
+    animation: fadeOut 1s;
+}
+
+/* .page-transition {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.page-transition:target {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+    z-index: -1;
+} */
+
+
+
+
+
+
+/*Prueba letras video*/
+.video-container {
+    position: relative;
+}
+
+.floating-text {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    color: var(--letra-global);
+    font-family: inter;
+    font-size: 1.3rem;
+    background-color: var(--floatin-text);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    padding: 2%;
+    opacity: 0.7;
+}
+
+@keyframes floatingAnimation {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+#cookie-message-close,
+.about-div-left:hover .text-one,
+.text-two {
+    opacity: 0
+}
+
+.vid,
+.video {
+    height: 100%
+}
+
+#cookie-message {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .8);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem
+}
+
+#cookie-message .cookie-paragraph {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--cookies-color);
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    color: #000;
+    font-size: 1rem;
+    font-family: inter;
+    line-height: 1.5rem
+}
+
+#cookie-message .cookies-policity {
+    color: #e6e6e6
+}
+
+#cookie-message-close:checked,
+#cookie-message-close:checked~#cookie-message,
+#cookie-message-close:checked~.ckcls {
+    display: none
+}
+
+.ckcls {
+    padding: 1%;
+    font-family: inter
+}
+
+.hover-4 {
+    border: .25vw solid;
+    border-image: white;
+    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0/200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+    padding: 3%
+}
+
+.hover-4:hover {
+    --_i: 100%;
+    color: #00ff2a;
+    transition: .3s, -webkit-mask-size .3s .3s
+}
+
+.about-text,
+.lenguage-menu-item,
+.navbar-link,
+.text-home,
+.text-logo,
+.text-news,
+.text-one,
+.text-two {
+    text-decoration: none;
+    color: var(--letra-navbar-before);
+    font-family: inter;
+    font-size: 1.2em;
+    font-weight: 250;
+    transition: .7s ease-in-out;
+    text-align: center
+}
+
+.navbar-link:hover,
+.text-news:hover {
+    color: var(--letra-navbar)
+}
+
+.text-logo {
+    font-size: 2.5em
+}
+
+.about-text,
+.text-news,
+.text-one,
+.text-two,
+.text_home {
+    font-size: 1.5em
+}
+
+.text-two {
+    width: 90%;
+    transition: .5s
+}
+
+.title {
+    font-size: 1.8em
+}
+
+.second {
+    color: #fff;
+    font-size: 2em;
+    font-family: inter
+}
+
+.video {
+    width: 100%
+}
+
+.vid {
+    overflow: hidden;
+    width: 100%
+}
+
+.main-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto
+}
+
+.separator {
+    width: 100%;
+    min-height: 5vh;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.about-div-left,
+.main-about {
+    display: flex;
+    flex-direction: column
+}
+
+.separator-link {
+    text-decoration: none;
+    color: #000;
+    font-family: inter;
+    font-size: 1.2em;
+    font-weight: 400;
+    transition: .7s ease-in-out
+}
+
+.main-about {
+    justify-content: space-between;
+    align-items: center
+}
+
+.about-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 30vh;
+}
+
+.about-div-left {
+    background-color: var(--about-color-main);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    transition: 1.5s ease-in-out
+}
+
+.about-div-future,
+.about-div-objectives,
+.about-div-rigth {
+    background-color: #e0e0e0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    width: 100%
+}
+
+.about-div-left:hover .text-two {
+    opacity: 100;
+    text-align: center;
+    display: block
+}
+
+.about-div-future,
+.about-div-objectives,
+.about-div-rigth,
+.news-first {
+    display: flex;
+    display: flex
+}
+
+.about-div-left:hover {
+    background-color: var(--sustaibability-bg)
+}
+
+.about-div-objectives {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://www.diariodenavarra.es/uploads/2023/01/31/63d8f3f47e2da.jpeg)
+}
+
+.about-div-future:hover,
+.about-div-objectives:hover,
+.about-div-rigth:hover {
+    display: block;
+    opacity: 100
+}
+
+.about-div-rigth {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/487/710/406/ford-gt40-backgrounds-1966-sports-car-wallpaper-preview.jpg)
+}
+
+.about-div-future {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/nasa_meatball_large.jpg?itok=s09crfPr)
+}
+
+.news-first {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #5f5f5f
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 20% 20% 20% 20% 5%;
+    grid-template-rows: 15% 30% 30% 15%;
+    gap: 5% 2%;
+    grid-auto-flow: row;
+    grid-template-areas: ". . . . . ." ". Noticia1 Noticia2 Noticia3 Noticia4 ." ". Noticia5 Noticia6 Noticia7 Noticia8 ." ". . . . . ."
+}
+
+.Noticia1,
+.Noticia2,
+.Noticia3,
+.Noticia4,
+.Noticia5,
+.Noticia6,
+.Noticia7,
+.Noticia8 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    gap: 0 0;
+    grid-auto-flow: row;
+    background-size: 100% 24vh;
+    background-repeat: no-repeat;
+    transition: 1s ease-in-out
+}
+
+.Noticia1 {
+    text-align: center;
+    grid-area: Noticia1;
+    background-image: url(https://www.supercars.net/blog/wp-content/uploads/2020/11/2020-Mercedes-AMG-A45-011-2160-scaled.jpg)
+}
+
+.Noticia1:hover .first,
+.Noticia2:hover .first,
+.Noticia3:hover .first,
+.Noticia4:hover .first,
+.Noticia5:hover .first,
+.Noticia6:hover .first,
+.Noticia7:hover .first,
+.Noticia8:hover .first {
+    display: flex;
+    color: #e6e6e6;
+    font-size: 1.4em;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out
+}
+
+.Noticia1:hover,
+.Noticia2:hover,
+.Noticia3:hover,
+.Noticia4:hover,
+.Noticia5:hover,
+.Noticia6:hover,
+.Noticia7:hover,
+.Noticia8:hover {
+    transition: 1s ease-in-out;
+    transform: scale(1.1)
+}
+
+.Title,
+.Title1,
+.Title2 {
+    grid-area: 2/1/3/2
+}
+
+.Subtitle,
+.Subtitle1,
+.Subtitle2 {
+    grid-area: 3/1/4/2
+}
+
+.Noticia2 {
+    grid-area: Noticia2;
+    background-image: url(https://cdn.topgear.es/sites/navi.axelspringer.es/public/media/image/2022/12/pagani-huayra-r-circuito-spa-francorchamps-2904424.jpg)
+}
+
+.Noticia3 {
+    grid-template-areas: "." "Title3" "Subtitle3";
+    grid-area: Noticia3;
+    background-image: url(https://www.diariodenavarra.es/uploads/2023/01/31/63d8f3f47e2da.jpeg)
+}
+
+.Title3 {
+    grid-area: Title3
+}
+
+.Subtitle3 {
+    grid-area: Subtitle3
+}
+
+.Noticia4 {
+    grid-template-areas: "." "Title4" "Subtitle4";
+    grid-area: Noticia4;
+    background-image: url(https://w0.peakpx.com/wallpaper/646/822/HD-wallpaper-2024-lamborghini-revuelto-coupe-hybrid-v12-car.jpg)
+}
+
+.Title4 {
+    grid-area: Title4
+}
+
+.Subtitle4 {
+    grid-area: Subtitle4
+}
+
+.Noticia5 {
+    grid-template-areas: "." "Title5" "Subtitle5";
+    grid-area: Noticia5;
+    background-image: url(https://scontent-mad2-1.xx.fbcdn.net/v/t31.18172-8/15385333_1367582299932513_6778156096752330958_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=973b4a&_nc_ohc=6ZiCEIRwwQAAX-5Qp4_&_nc_ht=scontent-mad2-1.xx&oh=00_AfBUlAWAzivOck53MsRGZOyCdhM-4HKQrfU23qPLSWbsGg&oe=6480CB54)
+}
+
+.Title5 {
+    grid-area: Title5
+}
+
+.Subtitle5 {
+    grid-area: Subtitle5
+}
+
+.Noticia6 {
+    grid-template-areas: "." "Title6" "Subtitle6";
+    grid-area: Noticia6;
+    background-image: url(https://wallpaperaccess.com/full/1451252.jpg)
+}
+
+.Title6 {
+    grid-area: Title6
+}
+
+.Subtitle6 {
+    grid-area: Subtitle6
+}
+
+.Noticia7 {
+    grid-template-areas: "." "Title7" "Subtitle7";
+    grid-area: Noticia7;
+    background-image: url(https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/09/10/16312901607687.jpg)
+}
+
+.Title7 {
+    grid-area: Title7
+}
+
+.Subtitle7 {
+    grid-area: Subtitle7
+}
+
+.Noticia8 {
+    grid-template-areas: "." "Title8" "Subtitle8";
+    grid-area: Noticia8;
+    background-image: url(https://www.hdcarwallpapers.com/walls/tesla_roadster_4k-HD.jpg)
+}
+
+.Title8 {
+    grid-area: Title8
+}
+
+.Subtitle8 {
+    grid-area: Subtitle8
+}
+
+.main-sustainability {
+    display: flex;
+    flex-direction: column
+}
+
+.main-title {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--sustaibability-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.middle-photo,
+.middle-text {
+    width: 100%;
+    height: 90vh;
+    background-color: var(--sustaibability-bg);
+    display: flex
+}
+
+.middle-wrapper {
+    display: flex;
+    flex-direction: row
+}
+
+.middle-text {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center
+}
+
+.middle-photo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.sustainability-title {
+    font-size: 2em;
+    font-family: inter-ladea;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--letra-global)
+}
+
+.sustainability-text {
+    font-size: 1.6em;
+    font-family: inter;
+    color: var(--letra-global)
+}
+
+.sust-photo {
+    aspect-ratio: 5/4;
+    width: 80%
+}
+
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked+.carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+@media (max-width:768px) {
+    .floating-text {
+        opacity: 0;
+    }
+
+    #cookie-message {
+        height: 80%;
+    }
+
+    .about-first {
+        flex-direction: column;
+    }
+
+    .about-div-objectives,
+    .about-div-rigth,
+    .about-div-future {
+        display: none;
+    }
+
+    .text-one {
+        display: none;
+    }
+
+    .text-two {
+        opacity: 100;
+        color: var(--letra-global);
+    }
+
+
+    .middle-wrapper {
+        flex-direction: column;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .sust-photo {
+        height: 40vh;
+    }
+
+    .middle-photo {
+        height: auto;
+    }
+
+    .news {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-first {
+        flex-direction: column;
+    }
+
+    .about-div-objectives,
+    .about-div-rigth,
+    .about-div-future {
+        display: none;
+    }
+
+    .middle-wrapper {
+        flex-direction: column;
+    }
+
+    .news-grid {
+        width: 100%;
+        height: 130vh;
+    }
+
+    .container {
+        text-align: center;
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 50% 50% 50% 50% 50% 50% 50% 50%;
+        gap: 5% 2%;
+        grid-auto-flow: column;
+        grid-template-areas:
+            ". Noticia1 ."
+            ". Noticia2 ."
+            ". Noticia3 ."
+            ". Noticia4 ."
+            ". Noticia5 ."
+            ". Noticia6 ."
+            ". Noticia7 ."
+            ". Noticia8 .";
+    }
+
+    .Noticia1,
+    .Noticia2,
+    .Noticia3,
+    .Noticia4,
+    .Noticia5,
+    .Noticia6,
+    .Noticia7,
+    .Noticia8 {
+        display: grid;
+        grid-template-columns: 1.2fr .5fr 1.2fr;
+        grid-template-rows: 1.2fr .5fr 1.2fr;
+        gap: 0 0;
+        grid-auto-flow: row;
+        background-size: 100% 80%;
+        background-blend-mode: color-burn;
+        background-repeat: no-repeat;
+        transition: 1s ease-in-out
+    }
+
+    .separator {
+        height: auto;
+    }
+
+    .about-first {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sust-photo {
+        height: 60vh;
+    }
+}
+
+@media (max-width:500px) {
+    .text-two {
+        font-size: 1.2rem;
+    }
+}

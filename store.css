@@ -1,0 +1,263 @@
+.Login,
+.menu-container-one {
+    display: grid;
+    gap: 0 0;
+    grid-auto-flow: row
+}
+
+.Home,
+.Login,
+.Tienda,
+.menu-subitem {
+    background-color: var(--main-menu)
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./media/fonts/inter.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+
+
+
+.hover-4 {
+    border: .25vw solid;
+    border-image: white;
+    -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0/200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+    padding: 3%
+}
+
+.hover-4:hover {
+    --_i: 100%;
+    color: #00ff2a;
+    transition: .3s, -webkit-mask-size .3s .3s
+}
+
+.menu-container-one {
+    width: 100%;
+    height: 8vh;
+    text-align: center;
+    grid-template-columns: 16% 26% 16% 26% 16%;
+    grid-template-rows: 97% 3%;
+    grid-template-areas: "menu-item-first menu-item-first menu-item-first menu-item-first Login" "Raya Raya Raya Raya Raya"
+}
+
+.Home,
+.Login,
+.Raya,
+.Tienda {
+    height: 100%
+}
+
+.Login,
+.menu-container-two {
+    grid-template-rows: 100%;
+    width: 100%
+}
+
+.Home {
+    grid-area: Home;
+    width: 100%
+}
+
+.Tienda {
+    grid-area: Store;
+    width: 100%
+}
+
+.Login {
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "text img";
+    grid-area: Login
+}
+
+.menu-element,
+.menu-element-whitespace,
+.menu-item-first {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-menu)
+}
+
+.menu-subitem {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.Product-one,
+.container,
+.menu-container-two {
+    display: grid;
+    gap: 0 0;
+    grid-auto-flow: row
+}
+
+.Raya {
+    grid-area: Raya;
+    width: 100%;
+    background-color: #1d1d1d
+}
+
+.menu-container-two {
+    height: 6vh;
+    grid-template-columns: 2% 10% 10% 10% 10% 28% 16% 14%
+}
+
+a {
+    text-decoration: none;
+    color: #c9c9c9;
+    font-family: inter;
+    font-size: 1.5em;
+    font-weight: 250;
+    transition: .7s ease-in-out
+}
+
+a:hover {
+    color: #fff
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 22% 26% 26% 26%;
+    grid-template-rows: 30% 30% 30% 30% 30% 30%;
+    grid-template-areas: "Side-Panel Product-one Product-two Product-three" "Side-Panel Product-four Product-five Product-six" "Side-Panel Product-seven Product-eight Product-nine" "Side-Panel Product-ten Product-eleven Product-twelve" "Side-Panel Product-thirteen Product-fourteen Product-fifteen" "Side-Panel Product-sixteen Product-nineteen Product-twenty"
+}
+
+.Product-eight,
+.Product-eleven,
+.Product-fifteen,
+.Product-five,
+.Product-four,
+.Product-fourteen,
+.Product-nine,
+.Product-nineteen,
+.Product-one,
+.Product-seven,
+.Product-six,
+.Product-sixteen,
+.Product-ten,
+.Product-thirteen,
+.Product-three,
+.Product-twelve,
+.Product-twenty,
+.Product-two,
+.Side-Panel {
+    width: 100%;
+    height: 100%
+}
+
+.Side-Panel {
+    grid-area: Side-Panel;
+    background-color: #353535
+}
+
+.Product-one {
+    grid-template-rows: 70% 30%;
+    grid-auto-columns: 1fr;
+    grid-area: Product-one;
+    background-color: grey
+}
+
+.main-image {
+    grid-area: 1/1/2/2
+}
+
+.name {
+    grid-area: 2/1/3/2
+}
+
+.Product-two {
+    grid-area: Product-two;
+    background-color: #fff
+}
+
+.Product-three {
+    grid-area: Product-three;
+    background-color: grey
+}
+
+.Product-four {
+    grid-area: Product-four;
+    background-color: #fff
+}
+
+.Product-five {
+    grid-area: Product-five;
+    background-color: grey
+}
+
+.Product-six {
+    grid-area: Product-six;
+    background-color: #fff
+}
+
+.Product-seven {
+    grid-area: Product-seven;
+    background-color: grey
+}
+
+.Product-eight {
+    grid-area: Product-eight;
+    background-color: #fff
+}
+
+.Product-nine {
+    grid-area: Product-nine;
+    background-color: grey
+}
+
+.Product-ten {
+    grid-area: Product-ten;
+    background-color: #fff
+}
+
+.Product-eleven {
+    grid-area: Product-eleven;
+    background-color: grey
+}
+
+.Product-twelve {
+    grid-area: Product-twelve;
+    background-color: #fff
+}
+
+.Product-thirteen {
+    grid-area: Product-thirteen;
+    background-color: grey
+}
+
+.Product-fourteen {
+    grid-area: Product-fourteen;
+    background-color: #fff
+}
+
+.Product-fifteen {
+    grid-area: Product-fifteen;
+    background-color: grey
+}
+
+.Product-sixteen {
+    grid-area: Product-sixteen;
+    background-color: #fff
+}
+
+.Product-nineteen {
+    grid-area: Product-nineteen;
+    background-color: grey
+}
+
+.Product-twenty {
+    grid-area: Product-twenty;
+    background-color: #fff
+}
