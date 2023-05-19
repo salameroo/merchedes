@@ -35,6 +35,13 @@ body {
     display: none
 }
 
+#english-switch-button:checked,
+#english-switch-button:checked~.page-transition-english,
+#english-switch-button:checked~.english-btn,
+.first {
+    display: block
+}
+
 .english-btn {
     padding: 1%;
     font-family: inter;
@@ -45,6 +52,9 @@ body {
     width: 10%;
 }
 
+.page-transition-english {
+    display: none;
+}
 
 @keyframes fadeOut {
     0% {
