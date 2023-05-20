@@ -1,0 +1,200 @@
+/*Estas animaciones son de la landing page*/
+
+@keyframes introMainPage {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.15;
+    }
+
+    25% {
+        opacity: 0.25;
+        filter: blur(3px);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @keyframes fadeOut {
+
+    0% {
+        filter: blur(0px);
+        border-left: 100vw solid red;
+    }
+
+    25% {
+        filter: blur(4px);
+        border-left: 50vw solid red;
+    }
+
+    50% {
+        filter: blur(4px);
+        border-top: 100vh solid white;
+    }
+
+    65% {
+        filter: blur(4px);
+    }
+
+    75% {
+        filter: blur(4px);
+        border-bottom: 100vh solid rgb(0, 255, 179);
+    }
+
+    100% {
+        filter: blur(0px);
+        border-right: 100vw solid rgb(212, 0, 255);
+    }
+} */
+
+/*Animaciones de la tienda */
+
+@keyframes introStorePage {
+    0% {
+        filter: blur(0px);
+        transform: rotate(0deg);
+    }
+
+    40% {
+        filter: blur(4px);
+        border-left: 49vw solid rgb(40, 131, 52);
+        border-top: 49vh solid rgb(0, 0, 0);
+        border-right: 49vw solid rgb(179, 169, 31);
+        transform: rotate(360deg);
+    }
+
+    75% {
+        filter: blur(6px);
+        border-left: 49.5vw solid rgb(124, 21, 21);
+        border-top: 49.5vh solid white;
+        border-right: 49.5vw solid rgb(0, 183, 255);
+        transform: rotate(360deg);
+    }
+
+    100% {
+        filter: blur(0px);
+        border-left: 5vw solid red;
+        border-top: 5vh solid white;
+        border-right: 5vw solid rgb(212, 0, 255);
+    }
+}
+
+
+
+/* @keyframes base {
+    0% {
+    }
+
+    10% {
+    }
+
+    20% {
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+/*Esta no me acuerdo d donde es*/
+@keyframes floatingAnimation {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, -60%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*Cookies animation*/
+@keyframes anime {
+    0% {
+        width: 80px;
+        height: 80px;
+        background: #f0f0f0;
+        box-shadow: 0 0 0 #cccccc,
+            0 0 0 #ffffff,
+            10px 10px 10px #cccccc inset,
+            -10px -10px 10px #ffffff inset;
+    }
+
+    25% {
+        width: 80px;
+        height: 80px;
+        background: #f8f8f8;
+        box-shadow: 10px 10px 10px #cccccc,
+            10px 10px 10px #ffffff,
+            0 0 0 #cccccc inset,
+            0 0 0 #ffffff inset;
+    }
+
+    50% {
+        width: 60px;
+        height: 240px;
+        background: #f8f8f8;
+        box-shadow: 10px 10px 10px #cccccc,
+            10px 10px 10px #ffffff,
+            0 0 0 #cccccc inset,
+            0 0 0 #ffffff inset;
+
+    }
+
+    80% {
+        width: 480px;
+        height: 240px;
+        background: #fafafa;
+        box-shadow: 40px 40px 40px #cccccc,
+            0 0 0 #ffffff,
+            0 0 0 #cccccc inset,
+            2px 2px 2px #ffffff inset;
+    }
+
+    100% {
+        display: none;
+    }
+}
