@@ -7,6 +7,10 @@ body {
     background-color: rgb(32, 48, 54);
 }
 
+.landing {    
+    animation: cookiesIntro 1.5s;
+}
+
 .landing {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,5 @@
 /*Estas animaciones son de la landing page*/
+/*Esta animacion no esta muy elaborada porque no me parecia adecuado meter mucha cosa para la landing page*/
 
 @keyframes introMainPage {
     0% {
@@ -91,6 +92,23 @@
     }
 }
 
+/*Animaciones de la pagina de cookies*/
+@keyframes cookiesIntro {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        opacity: 1;
+        background-color: #000000;
+    }
+
+    100% {
+        opacity: 0;
+    } 
+}
 
 
 /* @keyframes base {

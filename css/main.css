@@ -45,6 +45,7 @@ body {
     padding: 1%;
     font-family: inter;
     color: white;
+    cursor: pointer;
 }
 
 .lenguage-menu {
@@ -57,7 +58,7 @@ body {
 
 
 .page-transition {
-    animation: introMainPage 1s both;
+    animation: introMainPage 1s;
 }
 
 .page-transition-english {
@@ -75,7 +76,7 @@ body {
 
 .floating-text {
     position: absolute;
-    top: 70%;
+    top: 11%;
     left: 3%;
     color: var(--letra-global);
     font-family: inter;
@@ -108,7 +109,7 @@ body {
     background-color: rgba(0, 0, 0, .8);
     color: #fff;
     width: 100%;
-    height: 100%;
+    height: 12%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +142,8 @@ body {
 
 .ckcls {
     padding: 1%;
-    font-family: inter
+    font-family: inter;
+    cursor: pointer;
 }
 
 .hover-4 {
