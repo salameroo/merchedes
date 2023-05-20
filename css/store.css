@@ -9,7 +9,7 @@
 }
 
 .page-transition-two {
-    animation: introStorePage 2.5s;
+    animation: 2.5s introStorePage
 }
 
 .Login,
@@ -258,36 +258,30 @@ a:hover {
 }
 
 .responsive-line {
-    display: none;
+    display: none
 }
 
 @media (max-width:500px) {
+
+    .Login,
     .menu-container-one {
         display: flex;
         flex-direction: column;
-        height: auto;
-    }
-
-    .Login {
-        display: flex;
-        flex-direction: column;
-        height: auto;
+        height: auto
     }
 
     .menu-container-two {
         display: none;
         flex-direction: column;
-        height: auto;
+        height: auto
     }
 
     .responsive-line {
-        display: block;
+        display: block
     }
 
     .container {
         display: flex;
-        flex-direction: column;
-
+        flex-direction: column
     }
-
 }

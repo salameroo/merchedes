@@ -1,3 +1,10 @@
+#cookie-message .cookie-paragraph,
+.floating-text {
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    font-family: inter
+}
+
 @font-face {
     font-family: inter;
     src: url(./../media/fonts/inter.ttf)
@@ -17,83 +24,81 @@ body {
     background-color: #000
 }
 
-
-
-
-/*Landing animation and language switches*/
-
-#english-switch-button {
-    opacity: 0;
+#cookie-message-close,
+#english-switch-button,
+.about-div-left:hover .text-one,
+.text-two {
+    opacity: 0
 }
 
-
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3,
+#carousel-4:checked~.control-4,
+#carousel-5:checked~.control-5,
+#carousel-6:checked~.control-6,
 #english-switch-button:checked,
-#english-switch-button:checked~.page-transition-english,
 #english-switch-button:checked~.english-btn,
+#english-switch-button:checked~.page-transition-english,
 .first {
     display: block
 }
 
+#cookie-message-close:checked,
+#cookie-message-close:checked~#cookie-message,
+#cookie-message-close:checked~.ckcls,
 #english-switch-button:checked,
-#english-switch-button:checked~.page-transition,
 #english-switch-button:checked~.english-btn,
-.first {
+#english-switch-button:checked~.page-transition,
+.first,
+.page-transition-english {
     display: none
+}
+
+#cookie-message,
+.about-div-future,
+.about-div-left,
+.about-div-objectives,
+.about-div-rigth,
+.about-first,
+.main-about,
+.main-home,
+.main-sustainability,
+.news-first,
+.separator {
+    display: flex;
+    display: flex
 }
 
 .english-btn {
     padding: 1%;
     font-family: inter;
-    color: white;
-    cursor: pointer;
+    color: #fff;
+    cursor: pointer
 }
 
 .lenguage-menu {
-    width: 10%;
+    width: 10%
 }
 
+.page-transition,
 .page-transition-english {
-    display: none;
+    animation: 1s introMainPage
 }
 
-
-.page-transition {
-    animation: introMainPage 1s;
-}
-
-.page-transition-english {
-    animation: introMainPage 1s;
-}
-
-
-
-
-
-/*Prueba letras video*/
 .video-container {
-    position: relative;
+    position: relative
 }
 
 .floating-text {
     position: absolute;
-    top: 11%;
+    top: 75%;
     left: 3%;
     color: var(--letra-global);
-    font-family: inter;
     font-size: 1.3rem;
     background-color: var(--floatin-text);
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
     padding: 2%;
-    opacity: 0.7;
-}
-
-
-
-#cookie-message-close,
-.about-div-left:hover .text-one,
-.text-two {
-    opacity: 0
+    opacity: .7
 }
 
 .vid,
@@ -102,17 +107,15 @@ body {
 }
 
 #cookie-message {
-    display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     z-index: 999;
     background-color: rgba(0, 0, 0, .8);
     color: #fff;
     width: 100%;
-    height: 12%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 67%;
     font-size: 1.5rem
 }
 
@@ -122,11 +125,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
     background-color: var(--cookies-color);
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
     color: #000;
     font-size: 1rem;
-    font-family: inter;
     line-height: 1.5rem
 }
 
@@ -134,16 +134,10 @@ body {
     color: #e6e6e6
 }
 
-#cookie-message-close:checked,
-#cookie-message-close:checked~#cookie-message,
-#cookie-message-close:checked~.ckcls {
-    display: none
-}
-
 .ckcls {
     padding: 1%;
     font-family: inter;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .hover-4 {
@@ -152,6 +146,12 @@ body {
     -webkit-mask: conic-gradient(from 180deg at top 8px right 8px, #0000 90deg, #000 0) var(--_i, 200%) 0/200% var(--_i, 8px) border-box no-repeat, conic-gradient(at bottom 8px left 8px, #0000 90deg, #000 0) 0 var(--_i, 200%)/var(--_i, 8px) 200% border-box no-repeat, linear-gradient(#000 0 0) padding-box no-repeat;
     transition: .3s, -webkit-mask-position .3s .3s;
     padding: 3%
+}
+
+#title,
+.carousel-indicators {
+    padding: 0;
+    text-align: center
 }
 
 .hover-4:hover {
@@ -219,7 +219,6 @@ body {
 }
 
 .main-home {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -231,15 +230,14 @@ body {
     min-height: 5vh;
     height: auto;
     background-color: #fff;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center
 }
 
 .about-div-left,
-.main-about {
-    display: flex;
+.main-about,
+.main-sustainability {
     flex-direction: column
 }
 
@@ -258,13 +256,12 @@ body {
 }
 
 .about-first {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    height: 30vh;
+    height: 30vh
 }
 
 .about-div-left {
@@ -293,14 +290,6 @@ body {
     opacity: 100;
     text-align: center;
     display: block
-}
-
-.about-div-future,
-.about-div-objectives,
-.about-div-rigth,
-.news-first {
-    display: flex;
-    display: flex
 }
 
 .about-div-left:hover {
@@ -343,6 +332,13 @@ body {
     background-color: #5f5f5f
 }
 
+.main-title,
+.middle-photo,
+.middle-text {
+    width: 100%;
+    background-color: var(--sustaibability-bg)
+}
+
 .container {
     text-align: center;
     width: 100%;
@@ -371,6 +367,16 @@ body {
     background-size: 100% 24vh;
     background-repeat: no-repeat;
     transition: 1s ease-in-out
+}
+
+.carousel-inner,
+.carousel-item,
+.main-title,
+.middle-photo,
+.middle-text,
+.middle-wrapper {
+    display: flex;
+    display: flex
 }
 
 .Noticia1 {
@@ -510,16 +516,8 @@ body {
     grid-area: Subtitle8
 }
 
-.main-sustainability {
-    display: flex;
-    flex-direction: column
-}
-
 .main-title {
-    width: 100%;
     height: 10vh;
-    background-color: var(--sustaibability-bg);
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center
@@ -527,14 +525,10 @@ body {
 
 .middle-photo,
 .middle-text {
-    width: 100%;
-    height: 90vh;
-    background-color: var(--sustaibability-bg);
-    display: flex
+    height: 90vh
 }
 
 .middle-wrapper {
-    display: flex;
     flex-direction: row
 }
 
@@ -572,46 +566,43 @@ body {
 
 .carousel {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .64);
+    margin-top: 26px
 }
 
 .carousel-inner {
-    display: flex;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 100%
 }
 
 .carousel-open:checked+.carousel-item {
     position: static;
-    opacity: 100;
+    opacity: 100
 }
 
 .carousel-item {
     position: absolute;
     opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
+    -webkit-transition: opacity .6s ease-out;
+    transition: opacity .6s ease-out;
     object-fit: cover;
     vertical-align: bottom;
-    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 100%
 }
 
 .carousel-item img {
     display: block;
     height: auto;
-    max-width: 100%;
+    max-width: 100%
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
+    background: rgba(0, 0, 0, .28);
     border-radius: 50%;
     color: #fff;
-    cursor: pointer;
     display: none;
     font-size: 40px;
     height: 40px;
@@ -624,154 +615,121 @@ body {
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
-    z-index: 10;
+    z-index: 10
 }
 
 .carousel-control.prev {
-    left: 2%;
+    left: 2%
 }
 
 .carousel-control.next {
-    right: 2%;
+    right: 2%
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-
-#carousel-1:checked~.control-1,
-#carousel-2:checked~.control-2,
-#carousel-3:checked~.control-3,
-#carousel-4:checked~.control-4,
-#carousel-5:checked~.control-5,
-#carousel-6:checked~.control-6 {
-    display: block;
+    background: rgba(0, 0, 0, .8);
+    color: #aaa
 }
 
 .carousel-indicators {
     list-style: none;
     margin: 0;
-    padding: 0;
     position: absolute;
     bottom: 2%;
     left: 0;
     right: 0;
-    text-align: center;
-    z-index: 10;
+    z-index: 10
 }
 
 .carousel-indicators li {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 5px
 }
 
 .carousel-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
-    font-size: 35px;
+    font-size: 35px
 }
 
 .carousel-bullet:hover {
-    color: #aaaaaa;
+    color: #aaa
 }
 
-#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-1:checked~.control-1~.carousel-indicators li:first-child .carousel-bullet,
 #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #428bca;
-}
-
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet,
 #carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet,
 #carousel-5:checked~.control-5~.carousel-indicators li:nth-child(5) .carousel-bullet,
 #carousel-6:checked~.control-6~.carousel-indicators li:nth-child(6) .carousel-bullet {
-    color: #428bca;
+    color: #428bca
 }
 
 #title {
     width: 100%;
     position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
+    margin: 0 auto;
     font-size: 27px;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .33), -1px 0 2px rgba(255, 255, 255, 0)
 }
-
 
 @media (max-width:768px) {
     .floating-text {
-        opacity: 0;
+        opacity: 0
     }
 
     #cookie-message {
-        height: 80%;
+        height: 80%
     }
 
-    .about-first {
-        flex-direction: column;
+    .about-first,
+    .middle-wrapper {
+        flex-direction: column
     }
 
+    .about-div-future,
     .about-div-objectives,
     .about-div-rigth,
-    .about-div-future {
-        display: none;
-    }
-
+    .news,
     .text-one {
-        display: none;
+        display: none
     }
 
     .text-two {
         opacity: 100;
-        color: var(--letra-global);
+        color: var(--letra-global)
     }
 
-
-    .middle-wrapper {
-        flex-direction: column;
-    }
-
-    .container {
-        height: auto;
+    .container,
+    .middle-photo {
+        height: auto
     }
 
     .sust-photo {
-        height: 40vh;
+        height: 40vh
     }
-
-    .middle-photo {
-        height: auto;
-    }
-
-    .news {
-        display: none;
-    }
-
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .about-first {
-        flex-direction: column;
-    }
+@media (min-width:768px) and (max-width:1024px) {
 
-    .about-div-objectives,
-    .about-div-rigth,
-    .about-div-future {
-        display: none;
-    }
-
+    .about-first,
     .middle-wrapper {
-        flex-direction: column;
+        flex-direction: column
+    }
+
+    .about-div-future,
+    .about-div-objectives,
+    .about-div-rigth {
+        display: none
     }
 
     .news-grid {
         width: 100%;
-        height: 130vh;
+        height: 130vh
     }
 
     .container {
@@ -783,15 +741,7 @@ body {
         grid-template-rows: 50% 50% 50% 50% 50% 50% 50% 50%;
         gap: 5% 2%;
         grid-auto-flow: column;
-        grid-template-areas:
-            ". Noticia1 ."
-            ". Noticia2 ."
-            ". Noticia3 ."
-            ". Noticia4 ."
-            ". Noticia5 ."
-            ". Noticia6 ."
-            ". Noticia7 ."
-            ". Noticia8 .";
+        grid-template-areas: ". Noticia1 ." ". Noticia2 ." ". Noticia3 ." ". Noticia4 ." ". Noticia5 ." ". Noticia6 ." ". Noticia7 ." ". Noticia8 ."
     }
 
     .Noticia1,
@@ -814,21 +764,21 @@ body {
     }
 
     .separator {
-        height: auto;
+        height: auto
     }
 
     .about-first {
         flex-direction: column;
-        height: auto;
+        height: auto
     }
 
     .sust-photo {
-        height: 60vh;
+        height: 60vh
     }
 }
 
 @media (max-width:500px) {
     .text-two {
-        font-size: 1.2rem;
+        font-size: 1.2rem
     }
 }
