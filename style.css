@@ -20,9 +20,7 @@ body {
 
 
 
-
-
-
+/*Landing animation and language switches*/
 
 #english-switch-button {
     opacity: 0;
@@ -57,13 +55,103 @@ body {
     display: none;
 }
 
+/* @keyframes fadeOut {
+    0% {
+        border-top: 4vw solid white;
+        opacity: 0;
+    }
+
+    25% {
+        border-top: 10vw solid rgb(173, 173, 173);
+        opacity: 0.25;
+    }
+
+    50% {
+        border-top: 20vw solid rgb(73, 73, 73);
+        opacity: 0.5;
+    }
+
+    75% {
+        border-top: 4vw solid rgb(172, 172, 172);
+        opacity: 0.75;
+    }
+
+    100% {
+        border-top: 1vw solid white;
+        opacity: 1;
+    }
+} */
+
+/* @keyframes fadeOut {
+
+    0% {
+        filter: blur(0px);
+        border-left: 100vw solid red;
+    }
+
+    25% {
+        filter: blur(4px);
+        border-left: 0vw solid red;
+        border-top: 100vh solid white;
+    }
+
+    50% {
+        filter: blur(4px);
+    }
+
+    65% {
+        filter: blur(4px);
+    }
+
+    75% {
+        filter: blur(4px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+
+} */
+
 @keyframes fadeOut {
     0% {
         opacity: 0;
     }
 
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
     50% {
-        opacity: 0.5;
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
     }
 
     100% {
@@ -72,25 +160,12 @@ body {
 }
 
 .page-transition {
-    animation: fadeOut 1s;
+    animation: fadeOut 3s;
 }
 
 .page-transition-english {
-    animation: fadeOut 1s;
+    animation: fadeOut 3s;
 }
-
-/* .page-transition {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-.page-transition:target {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    pointer-events: none;
-    z-index: -1;
-} */
-
 
 
 
@@ -363,7 +438,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/487/710/406/ford-gt40-backgrounds-1966-sports-car-wallpaper-preview.jpg)
+    background-image: url(https://images6.alphacoders.com/329/thumb-1920-329227.jpg)
 }
 
 .about-div-future {
@@ -609,6 +684,8 @@ body {
 }
 
 
+
+
 .carousel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -616,6 +693,7 @@ body {
 }
 
 .carousel-inner {
+    display: flex;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -631,6 +709,12 @@ body {
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
+    object-fit: cover;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .carousel-item img {
@@ -674,7 +758,10 @@ body {
 
 #carousel-1:checked~.control-1,
 #carousel-2:checked~.control-2,
-#carousel-3:checked~.control-3 {
+#carousel-3:checked~.control-3,
+#carousel-4:checked~.control-4,
+#carousel-5:checked~.control-5,
+#carousel-6:checked~.control-6 {
     display: block;
 }
 
@@ -709,6 +796,12 @@ body {
 #carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#carousel-4:checked~.control-4~.carousel-indicators li:nth-child(4) .carousel-bullet,
+#carousel-5:checked~.control-5~.carousel-indicators li:nth-child(5) .carousel-bullet,
+#carousel-6:checked~.control-6~.carousel-indicators li:nth-child(6) .carousel-bullet {
     color: #428bca;
 }
 

@@ -271,7 +271,7 @@ a:hover {
     }
 
     .menu-container-two {
-        display: flex;
+        display: none;
         flex-direction: column;
         height: auto;
     }
@@ -283,7 +283,7 @@ a:hover {
     .container {
         display: flex;
         flex-direction: column;
-        
+
     }
 
 }
