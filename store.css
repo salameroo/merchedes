@@ -1,5 +1,18 @@
+@font-face {
+    font-family: inter;
+    src: url(./media/fonts/inter.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
 .Login,
-.menu-container-one {
+.Product-one,
+.container,
+.menu-container-one,
+.menu-container-two {
     display: grid;
     gap: 0 0;
     grid-auto-flow: row
@@ -11,20 +24,6 @@
 .menu-subitem {
     background-color: var(--main-menu)
 }
-
-@font-face {
-    font-family: inter;
-    src: url(./media/fonts/inter.ttf)
-}
-
-* {
-    margin: 0;
-    padding: 0
-}
-
-
-
-
 
 .hover-4 {
     border: .25vw solid;
@@ -92,14 +91,6 @@
     display: flex;
     justify-content: center;
     align-items: center
-}
-
-.Product-one,
-.container,
-.menu-container-two {
-    display: grid;
-    gap: 0 0;
-    grid-auto-flow: row
 }
 
 .Raya {
@@ -260,4 +251,39 @@ a:hover {
 .Product-twenty {
     grid-area: Product-twenty;
     background-color: #fff
+}
+
+.responsive-line {
+    display: none;
+}
+
+@media (max-width:500px) {
+    .menu-container-one {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .Login {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu-container-two {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .responsive-line {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
 }

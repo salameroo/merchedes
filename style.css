@@ -28,18 +28,19 @@ body {
     opacity: 0;
 }
 
-#english-switch-button:checked,
-#english-switch-button:checked~.page-transition,
-#english-switch-button:checked~.english-btn,
-.first {
-    display: none
-}
 
 #english-switch-button:checked,
 #english-switch-button:checked~.page-transition-english,
 #english-switch-button:checked~.english-btn,
 .first {
     display: block
+}
+
+#english-switch-button:checked,
+#english-switch-button:checked~.page-transition,
+#english-switch-button:checked~.english-btn,
+.first {
+    display: none
 }
 
 .english-btn {

@@ -11,7 +11,7 @@
             "traccion": "4matic",
             "carroceria": "compacto",
             "consumo": "6.7l",
-            "potencia":"225kw + 10Kw ~ (306Cv + 14Cv)"
+            "potencia": "225kw + 10Kw ~ (306Cv + 14Cv)"
         },
         {
             "nombre": "Product-two",
@@ -23,7 +23,7 @@
             "traccion": "trasera",
             "carroceria": "berlina",
             "consumo": "4.6l",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-three",
@@ -35,7 +35,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-four",
@@ -47,7 +47,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-five",
@@ -59,7 +59,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-six",
@@ -71,7 +71,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-seven",
@@ -83,7 +83,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-eighth",
@@ -95,7 +95,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-nine",
@@ -107,7 +107,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-ten",
@@ -119,7 +119,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-eleven",
@@ -131,7 +131,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-twelve",
@@ -143,7 +143,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-thirteen",
@@ -155,7 +155,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-fourteen",
@@ -167,7 +167,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-fifteen",
@@ -179,7 +179,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-sixteen",
@@ -191,7 +191,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-seventeen",
@@ -203,7 +203,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-eighteen",
@@ -215,7 +215,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-nineteen",
@@ -227,7 +227,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         },
         {
             "nombre": "Product-twenty",
@@ -239,7 +239,7 @@
             "traccion": "",
             "carroceria": "",
             "consumo": "",
-            "potencia":"120KW + 20KW (163Cv + 28Cv)"
+            "potencia": "120KW + 20KW (163Cv + 28Cv)"
         }
     ]
 }
