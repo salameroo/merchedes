@@ -735,6 +735,9 @@ body {
 }
 
 @media (min-width:768px) and (max-width:1024px) {
+    #cookie-message {
+        height: auto
+    }
 
     .about-first,
     .middle-wrapper {
