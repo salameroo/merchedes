@@ -1,4 +1,5 @@
 :root {
+    --body-bg: black;
     --letra-global: #ffffff;
     --main-navbar: rgb(0, 0, 0);
     --letra-navbar-before: #cecece;

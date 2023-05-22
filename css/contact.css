@@ -21,7 +21,9 @@ header {
     cursor: pointer
 }
 
-
+.page-transition-two {
+    animation: all 2.5s introStorePage
+}
 
 .enlace {
     display: flex;

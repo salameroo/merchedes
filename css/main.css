@@ -1,36 +1,42 @@
-#cookie-message .cookie-paragraph,
-.floating-text {
-    border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
-    font-family: inter
-}
-
+/* Define custom fonts */
 @font-face {
     font-family: inter;
-    src: url(./../media/fonts/inter.ttf)
+    src: url(./../media/fonts/inter.ttf);
 }
 
 @font-face {
     font-family: inter-ladea;
-    src: url(./media/fonts/static/inter.ttf)
+    src: url(./media/fonts/static/inter.ttf);
 }
 
+/* Reset margin and padding for all elements */
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
+/* Set background color for the body */
 body {
-    background-color: #000
+    background-color: var(--body-bg);
 }
 
+/* Styling for cookie message and floating text */
+#cookie-message .cookie-paragraph,
+.floating-text {
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    font-family: inter;
+}
+
+/* Set opacity to 0 for certain elements */
 #cookie-message-close,
 #english-switch-button,
 .about-div-left:hover .text-one,
 .text-two {
-    opacity: 0
+    opacity: 0;
 }
 
+/* Show/hide elements based on checkbox states */
 #carousel-1:checked~.control-1,
 #carousel-2:checked~.control-2,
 #carousel-3:checked~.control-3,
@@ -41,7 +47,7 @@ body {
 #english-switch-button:checked~.english-btn,
 #english-switch-button:checked~.page-transition-english,
 .first {
-    display: block
+    display: block;
 }
 
 #cookie-message-close:checked,
@@ -52,9 +58,10 @@ body {
 #english-switch-button:checked~.page-transition,
 .first,
 .page-transition-english {
-    display: none
+    display: none;
 }
 
+/* Flexbox styling for various sections */
 #cookie-message,
 .about-div-future,
 .about-div-left,
@@ -67,29 +74,34 @@ body {
 .news-first,
 .separator {
     display: flex;
-    display: flex
+    display: flex;
 }
 
+/* Styling for English language button */
 .english-btn {
     padding: 1%;
     font-family: inter;
     color: #fff;
-    cursor: pointer
+    cursor: pointer;
 }
 
+/* Styling for language menu */
 .lenguage-menu {
-    width: 10%
+    width: 10%;
 }
 
+/* CSS animation for page transitions */
 .page-transition,
 .page-transition-english {
-    animation: 1s introMainPage
+    animation: 1s introMainPage;
 }
 
+/* Styling for video container */
 .video-container {
-    position: relative
+    position: relative;
 }
 
+/* Styling for floating text on videos */
 .floating-text {
     position: absolute;
     top: 75%;
@@ -98,14 +110,16 @@ body {
     font-size: 1.3rem;
     background-color: var(--floatin-text);
     padding: 2%;
-    opacity: .7
+    opacity: .7;
 }
 
+/* Styling for videos */
 .vid,
 .video {
-    height: 100%
+    height: 100%;
 }
 
+/* Styling for cookie message */
 #cookie-message {
     flex-direction: column-reverse;
     align-items: center;
@@ -115,8 +129,8 @@ body {
     background-color: rgba(0, 0, 0, .8);
     color: #fff;
     width: 100%;
-    height: 67%;
-    font-size: 1.5rem
+    height: 92%;
+    font-size: 1.5rem;
 }
 
 #cookie-message .cookie-paragraph {
@@ -339,6 +353,8 @@ body {
     background-color: var(--sustaibability-bg)
 }
 
+
+/*Grid section, this one is made with a grid designer*/
 .container {
     text-align: center;
     width: 100%;
@@ -564,6 +580,8 @@ body {
     width: 80%
 }
 
+/*Styling for the carro*/
+
 .carousel {
     position: relative;
     box-shadow: 0 1px 6px rgba(0, 0, 0, .64);
@@ -677,6 +695,8 @@ body {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .33), -1px 0 2px rgba(255, 255, 255, 0)
 }
 
+/*Media queries*/
+
 @media (max-width:768px) {
     .floating-text {
         opacity: 0
@@ -781,6 +801,7 @@ body {
     .text-two {
         font-size: 1.2rem
     }
+
     .news-grid {
         display: none;
     }

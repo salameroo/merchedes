@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./../css/store.css">
     <link rel="stylesheet" href="./../css/footer.css">
     <link rel="stylesheet" href="./../css/navbar.css">
-    <link rel="stylesheet" href="./../css/animaciones.css">
+    <link rel="stylesheet" href="./../css/animation.css">
     <link rel="stylesheet" href="./../css/panntone.css">
 </head>
 
@@ -19,101 +19,106 @@
         <div class="menu-container-one">
             <div class="menu-item-first"><a class="hover-4" href="./../index.html">Inicio</a></div>
             <div class="menu-item-first"></div>
-            <div class="menu-item-first"><a href="./store.html">Tienda</a></div>
+            <div class="menu-item-first"><a class="links-global" href="./store.html">Tienda</a></div>
             <div class="Login">
-                <div class="menu-subitem"><a href="./contacto.html">Iniciar Sesion</a></div>
-                <div class="menu-subitem"><a href="./../notfound.html">Foto</a></div>
+                <div class="menu-subitem"><a class="links-global" href="./contact.html">Iniciar Sesion</a></div>
+                <div class="menu-subitem"><a class="links-global" href="./../notfound.html">Foto</a></div>
             </div>
             <div class="menu-item-first"></div>
             <div class="Raya"></div>
         </div>
         <hr class="responsive-line">
         <div class="menu-container-two">
-            <div class="menu-element"><a href=""></a></div>
-            <div class="menu-element"><a href="./../notfound.html">Mercedes</a></div>
-            <div class="menu-element"><a href="./../notfound.html">Nissan</a></div>
-            <div class="menu-element"><a href="./../notfound.html">Ford</a></div>
-            <div class="menu-element"><a href="./../notfound.html">Brabus</a></div>
-            <div class="menu-element-whitespace"><a href=""></a></div>
-            <div class="menu-element"><a href="./../notfound.html">Asesorate/Contacto</a></div>
-            <div class="menu-element"><a href="./../notfound.html">Tecnologias</a></div>
+            <div class="menu-element"><a class="links-global" href=""></a></div>
+            <div class="menu-element"><a class="links-global" href="./../notfound.html">Mercedes</a></div>
+            <div class="menu-element"><a class="links-global" href="./../notfound.html">Nissan</a></div>
+            <div class="menu-element"><a class="links-global" href="./../notfound.html">Ford</a></div>
+            <div class="menu-element"><a class="links-global" href="./../notfound.html">Brabus</a></div>
+            <div class="menu-element-whitespace"><a class="links-global" href=""></a></div>
+            <div class="menu-element"><a class="links-global" href="./../notfound.html">Asesorate/Contacto</a></div>
+            <div class="menu-element"><a class="links-global" href="./../notfound.html">Tecnologias</a></div>
         </div>
-        <div class="container">
+        <div class="container" id="container">
             <div class="Side-Panel"></div>
             <div class="Product-one">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-two">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-three">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-four">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-five">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-six">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-seven">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-eight">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-nine">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-ten">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-eleven">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-twelve">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-thirteen">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-fourteen">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-fifteen">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-sixteen">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-nineteen">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
             <div class="Product-twenty">
-                <div class="main-image"></div>
-                <div class="name"></div>
+                <div class="content"></div>
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("./../json/productos.json", function (data) {
+                data.productos.forEach(function (product, index) {
+                    var productContainer = $("#container .content").eq(index);
+                    var brand = $(`<p class="product-brand">`).text("Brand: " + product.brand);
+                    var model = $(`<p class="product-text">`).text("Model: " + product.model);
+                    var price = $(`<p class="product-text">`).text("Price: $" + product.price);
+                    var fuel = $(`<p class="product-text">`).text("Fuel: " + product.fuel);
+                    var traction = $(`<p class="product-text">`).text("Traction: " + product.traction);
+                    var bodywork = $(`<p class="product-text">`).text("Bodywork: " + product.bodywork);
+                    var consumption = $(`<p class="product-text">`).text("Consumption: " + product.consumption);
+                    var power = $(`<p class="product-text">`).text("Power: " + product.power);
+
+
+                    productContainer.append(brand, model, price, fuel, traction, bodywork, consumption, power);
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

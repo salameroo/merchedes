@@ -1,16 +1,36 @@
+/*Imported global font*/
+
 @font-face {
     font-family: inter;
     src: url(./../media/fonts/inter.ttf)
 }
+
+/*restyling the margins and the padding*/
 
 * {
     margin: 0;
     padding: 0
 }
 
+/*Styling for some texts*/
+
+.product-text {
+    font-family: inter;
+    font-size: 1rem;
+    color: white;
+}
+
+.product-brand {
+    font-family: inter;
+    font-size: 1.2rem;
+    color: white;
+}
+
 .page-transition-two {
     animation: 2.5s introStorePage
 }
+
+/*Styles for the grid*/
 
 .Login,
 .Product-one,
@@ -28,6 +48,8 @@
 .menu-subitem {
     background-color: var(--main-menu)
 }
+
+/*Some hovers*/
 
 .hover-4 {
     border: .25vw solid;
@@ -97,6 +119,8 @@
     align-items: center
 }
 
+/*This one is for an hr tag*/
+
 .Raya {
     grid-area: Raya;
     width: 100%;
@@ -108,7 +132,10 @@
     grid-template-columns: 2% 10% 10% 10% 10% 28% 16% 14%
 }
 
-a {
+/*Styles for the links*/
+
+.links-global,
+.hover-4 {
     text-decoration: none;
     color: #c9c9c9;
     font-family: inter;
@@ -117,9 +144,11 @@ a {
     transition: .7s ease-in-out
 }
 
-a:hover {
+.links-global:hover {
     color: #fff
 }
+
+/*Grid styles for the products*/
 
 .container {
     width: 100%;
@@ -161,7 +190,6 @@ a:hover {
     grid-template-rows: 70% 30%;
     grid-auto-columns: 1fr;
     grid-area: Product-one;
-    background-color: grey
 }
 
 .main-image {
@@ -174,92 +202,84 @@ a:hover {
 
 .Product-two {
     grid-area: Product-two;
-    background-color: #fff
 }
 
 .Product-three {
     grid-area: Product-three;
-    background-color: grey
 }
 
 .Product-four {
     grid-area: Product-four;
-    background-color: #fff
 }
 
 .Product-five {
     grid-area: Product-five;
-    background-color: grey
+
 }
 
 .Product-six {
     grid-area: Product-six;
-    background-color: #fff
 }
 
 .Product-seven {
     grid-area: Product-seven;
-    background-color: grey
+
 }
 
 .Product-eight {
     grid-area: Product-eight;
-    background-color: #fff
 }
 
 .Product-nine {
     grid-area: Product-nine;
-    background-color: grey
+
 }
 
 .Product-ten {
     grid-area: Product-ten;
-    background-color: #fff
 }
 
 .Product-eleven {
     grid-area: Product-eleven;
-    background-color: grey
+
 }
 
 .Product-twelve {
     grid-area: Product-twelve;
-    background-color: #fff
 }
 
 .Product-thirteen {
     grid-area: Product-thirteen;
-    background-color: grey
+
 }
 
 .Product-fourteen {
     grid-area: Product-fourteen;
-    background-color: #fff
 }
 
 .Product-fifteen {
     grid-area: Product-fifteen;
-    background-color: grey
+
 }
 
 .Product-sixteen {
     grid-area: Product-sixteen;
-    background-color: #fff
 }
 
 .Product-nineteen {
     grid-area: Product-nineteen;
-    background-color: grey
+
 }
 
 .Product-twenty {
     grid-area: Product-twenty;
-    background-color: #fff
 }
 
 .responsive-line {
     display: none
 }
+
+/*Media queries*/
 
 @media (max-width:500px) {
 
