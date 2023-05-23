@@ -22,7 +22,7 @@ header {
 }
 
 .page-transition-two {
-    animation: all 2.5s introStorePage
+    animation: 2.5s introStorePage
 }
 
 .enlace {
@@ -53,7 +53,7 @@ body {
 }
 
 #tema {
-    background: orange;
+    background: #ffa500;
     padding: 10px 5px;
     position: fixed;
     top: 25px;
@@ -129,7 +129,7 @@ input[type=radio] {
 #part-1 label:after,
 #part-2 label:after {
     content: " *";
-    color: red
+    color: #ff0000
 }
 
 textarea {
